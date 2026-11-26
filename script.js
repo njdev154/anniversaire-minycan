@@ -1,6 +1,8 @@
 const DATE_OUVERTURE = Date.UTC(2026, 11, 4, 0, 0, 0);
 const isLocalHost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-const TEST_MODE = isLocalHost && new URLSearchParams(window.location.search).get("test") === "1";
+const queryParams = new URLSearchParams(window.location.search);
+const TEST_MODE = isLocalHost && queryParams.get("test") === "1";
+const PREVIEW_MODE = queryParams.get("preview") === "1";
 
 const waitingScreen = document.querySelector("#waitingScreen");
 const mailScreen = document.querySelector("#mailScreen");
@@ -425,7 +427,7 @@ function prepareDateLock() {
 }
 
 function startCountdown() {
-  if (TEST_MODE) {
+  if (TEST_MODE || PREVIEW_MODE) {
     showMailScreen(false);
     return;
   }
