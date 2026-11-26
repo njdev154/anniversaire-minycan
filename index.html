@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#22241f" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Une surprise d'anniversaire préparée rien que pour Minycan."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23bd553b'/%3E%3Cpath d='M32 46 18 32c-8-9 5-20 14-9 9-11 22 0 14 9z' fill='%2322241f'/%3E%3C/svg%3E"
+    />
+    <title>Pour Minycan — édition du 4 décembre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+    <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+
+    <section class="waiting-screen night-surface" id="waitingScreen" aria-live="polite">
+      <div class="waiting-stars" aria-hidden="true"></div>
+      <p class="eyebrow">Une édition personnelle · Abidjan</p>
+      <h1>Pour <em>Minycan</em></h1>
+      <p class="waiting-copy">Le 4 décembre, une petite histoire s'ouvrira rien que pour toi.</p>
+
+      <div class="countdown" aria-label="Compte à rebours avant son anniversaire">
+        <div class="count-unit"><span id="days">00</span><small>jours</small></div>
+        <div class="count-unit"><span id="hours">00</span><small>heures</small></div>
+        <div class="count-unit"><span id="minutes">00</span><small>minutes</small></div>
+        <div class="count-unit"><span id="seconds">00</span><small>secondes</small></div>
+      </div>
+      <p class="countdown-note">04 décembre 2026 · minuit à Abidjan</p>
+      <div class="waiting-rule" aria-hidden="true"></div>
+      <p class="waiting-signature">Garde ce lien près de toi.</p>
+    </section>
+
+    <section class="mail-screen night-surface" id="mailScreen" hidden>
+      <div class="waiting-stars" aria-hidden="true"></div>
+      <div class="mail-intro">
+        <p class="eyebrow">Courrier privé · 04.12.26</p>
+        <h1>Un mot pour<br /><em>toi seule.</em></h1>
+        <p>Cette enveloppe porte ton nom depuis le début.</p>
+      </div>
+      <button class="envelope-button" id="openEnvelope" type="button" aria-label="Ouvrir l'enveloppe">
+        <span class="envelope" aria-hidden="true">
+          <span class="envelope-letter">Pour Minycan</span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal"><span></span></span>
+        </span>
+        <span class="envelope-instruction">Touche le sceau pour ouvrir</span>
+      </button>
+      <span class="mail-footnote">Une petite attention, préparée avec amour.</span>
+    </section>
+
+    <div class="experience" id="experience" hidden>
+      <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+      <main>
+        <section class="hero-section night-surface" id="accueil">
+          <div class="hero-copy">
+            <p class="eyebrow">Édition privée · Abidjan · 04.12</p>
+            <p class="hero-kicker">Aujourd'hui, le monde fait</p>
+            <h1>un peu plus de place<br />à quelqu'un de <em>rare.</em></h1>
+            <p class="hero-name">Minycan Emmanuella</p>
+            <p class="hero-intro">Joyeux 19 ans, ma princesse.<br />Cette surprise, c'est juste pour toi.</p>
+            <a class="text-link" href="#portrait">Découvrir ta surprise <span aria-hidden="true">↓</span></a>
+          </div>
+          <figure class="hero-portrait">
+            <img data-src="assets/photos/moment-02.jpg" alt="Minycan, rayonnante" fetchpriority="high" />
+            <figcaption>La journée est à toi.</figcaption>
+          </figure>
+          <span class="hero-index" aria-hidden="true">01 / 09</span>
+        </section>
+
+        <section class="portrait-section paper-surface" id="portrait">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Ce que je vois en toi</p>
+            <h2>Tu es bien plus<br />qu'une jolie <em>photo.</em></h2>
+          </div>
+          <div class="portrait-stage" data-reveal>
+            <figure class="portrait-frame">
+              <img data-src="assets/photos/portrait.jpg" alt="Le regard de Minycan, en gros plan" loading="lazy" />
+              <figcaption><span>Archive 02</span><span>Le regard, d'abord.</span></figcaption>
+            </figure>
+          </div>
+          <div class="trait-list" aria-label="Ses qualités" data-reveal>
+            <span class="trait">Bienveillante</span>
+            <span class="trait">Franche</span>
+            <span class="trait">Intelligente</span>
+            <span class="trait">Motivante</span>
+            <span class="trait">Pleine de vie</span>
+            <span class="trait">Unique</span>
+          </div>
+          <p class="portrait-caption" data-reveal>
+            Ton grand cœur, ta franchise et cette folie qui te ressemble : c'est toi, et c'est précieux.
+          </p>
+        </section>
+
+        <section class="beginning-section peach-surface" id="depuis-le-debut">
+          <div class="beginning-copy" data-reveal>
+            <p class="eyebrow">Depuis le début</p>
+            <h2>Avant tes 19 ans,<br />il y avait déjà <em>toi.</em></h2>
+            <p>La même lumière, le même petit quelque chose qui n'appartient qu'à toi.</p>
+          </div>
+          <div class="beginning-prints">
+            <figure class="childhood-photo childhood-first" data-reveal>
+              <img data-src="assets/photos/petite-elle-01.jpg" alt="Minycan bébé" loading="lazy" />
+              <figcaption>Le jour où la lumière est arrivée.</figcaption>
+            </figure>
+            <figure class="childhood-photo childhood-second" data-reveal>
+              <img data-src="assets/photos/petite-elle-02.jpg" alt="Minycan petite fille" loading="lazy" />
+              <figcaption>Déjà princesse, depuis le début.</figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="song-section night-surface" id="chanson">
+          <div class="song-art" data-reveal>
+            <img data-src="assets/photos/moment-08.jpg" alt="Une photo de Minycan choisie pour la chanson de son anniversaire" loading="lazy" />
+            <span class="record-ring" aria-hidden="true"></span>
+            <span class="song-label">CÔTÉ A · LE 4 DÉCEMBRE</span>
+          </div>
+          <div class="song-copy" data-reveal>
+            <p class="eyebrow">Une chanson pour ton jour</p>
+            <h2>La bande-son<br />de tes <em>19 ans.</em></h2>
+            <p>À écouter quand tu veux. Et à chanter très fort si le cœur t'en dit.</p>
+            <a class="song-link" href="https://open.spotify.com/track/0A0doVRmPbLiHK3SPaedll" target="_blank" rel="noopener noreferrer">
+              Écouter la chanson <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="memories-section paper-surface" id="souvenirs">
+          <div class="section-heading memories-heading" data-reveal>
+            <p class="eyebrow">Archive personnelle · 01—10</p>
+            <h2>Dix instants.<br /><em>Toujours toi.</em></h2>
+            <p>Choisis un souvenir, fais-le glisser ou retourne-le pour lire le mot derrière.</p>
+          </div>
+          <div class="heart-trail" aria-hidden="true">
+            <svg viewBox="0 0 360 245" preserveAspectRatio="none">
+              <path d="M180 218 C130 177 38 122 41 73 C44 28 99 24 126 60 C145 85 161 105 180 121 C199 105 215 85 234 60 C261 24 316 28 319 73 C322 122 230 177 180 218 Z" />
+            </svg>
+          </div>
+          <div class="memory-area" data-reveal>
+            <div class="memory-display">
+              <figure class="polaroid" id="polaroid">
+                <div class="polaroid-inner">
+                  <div class="polaroid-face polaroid-front">
+                    <img id="memoryImage" alt="" />
+                    <p class="memory-label" id="memoryLabel">Un petit instant à garder.</p>
+                  </div>
+                  <div class="polaroid-face polaroid-back">
+                    <span class="handwritten">Un mot pour toi</span>
+                    <p id="memoryNote"></p>
+                    <span class="back-mark" aria-hidden="true">M.</span>
+                  </div>
+                </div>
+              </figure>
+              <div class="memory-controls">
+                <button class="round-control" id="previousMemory" type="button" aria-label="Photo précédente">←</button>
+                <span class="memory-count" id="memoryCount" aria-live="polite">01 <i>/</i> 10</span>
+                <button class="round-control" id="nextMemory" type="button" aria-label="Photo suivante">→</button>
+              </div>
+              <button class="flip-hint" id="flipMemory" type="button" aria-pressed="false">Retourne la photo pour lire ton mot</button>
+            </div>
+            <div class="memory-thumbnails" id="memoryThumbnails" role="group" aria-label="Choisir un souvenir"></div>
+          </div>
+          <div class="heart-drawing-note" data-reveal>
+            <span>Des moments qui méritaient<br />un cœur tout entier.</span>
+          </div>
+        </section>
+
+        <section class="play-section peach-surface" id="petites-folies">
+          <div class="section-heading play-heading" data-reveal>
+            <p class="eyebrow">Parce qu'il y a aussi ça</p>
+            <h2>Tes petites<br /><em>folies.</em></h2>
+            <p>Et franchement, qu'est-ce qu'on ferait sans elles ?</p>
+          </div>
+          <div class="play-gallery" data-reveal>
+            <div class="play-feature">
+              <button class="play-image-button" id="playMemory" type="button" aria-label="Afficher une autre photo drôle">
+                <img id="playImage" alt="Un moment drôle de Minycan" />
+                <span class="play-image-mark">Encore une</span>
+              </button>
+              <span class="play-count" id="playCount">01 / 05</span>
+            </div>
+            <div class="play-thumbnails" id="playThumbnails" role="group" aria-label="Choisir une photo drôle"></div>
+          </div>
+          <details class="video-note" id="videoNote" data-reveal>
+            <summary>
+              <span class="video-number">01</span>
+              <span class="video-summary-copy"><small>Film de poche</small><strong>Un souvenir en mouvement</strong></span>
+              <span class="video-toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="video-content">
+              <video id="memoryVideo" controls playsinline preload="none" poster="assets/photos/clin-oeil-05.jpg" aria-label="Petit souvenir vidéo de Minycan">
+                <source data-src="assets/video/souvenir.mp4" type="video/mp4" />
+                La vidéo n'est pas prise en charge par ce navigateur.
+              </video>
+              <p class="video-error" id="videoError" role="status" hidden></p>
+              <p>Une petite scène de nous, à garder près de soi.</p>
+            </div>
+          </details>
+        </section>
+
+        <section class="letter-section paper-surface" id="lettre">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Un dernier petit secret</p>
+            <h2>Choisis la date<br />qui est <em>à toi.</em></h2>
+            <p>Une seule de ces dates ouvre la lettre.</p>
+          </div>
+          <div class="date-lock" id="dateLock" data-reveal>
+            <button class="date-choice" type="button" data-date="12/04">12 / 04</button>
+            <button class="date-choice" type="button" data-date="04/12">04 / 12</button>
+            <button class="date-choice" type="button" data-date="25/12">25 / 12</button>
+            <button class="date-choice" type="button" data-date="14/02">14 / 02</button>
+            <button class="date-choice" type="button" data-date="04/11">04 / 11</button>
+            <button class="date-choice" type="button" data-date="01/01">01 / 01</button>
+          </div>
+          <p class="date-feedback" id="dateFeedback" aria-live="polite"></p>
+          <article class="letter-paper" id="letterPaper" hidden>
+            <div class="letter-seal" aria-hidden="true">M</div>
+            <p class="letter-to">À ma princesse, ma précieuse, mon bébé Minycan</p>
+            <h3>Ma vie, mon gros bébé d'amour,</h3>
+            <p>
+              Aujourd'hui c'est ton jour, et je voulais prendre le temps de célébrer
+              la personne que tu es. Pas seulement ta beauté, mais ton sourire, ton
+              grand cœur, ta franchise et cette folie qui rend chaque moment avec
+              toi inoubliable.
+            </p>
+            <p>
+              Je prie que cette nouvelle année t'apporte la santé, la paix, la
+              réussite et beaucoup de bonheur. Que tu réalises tes rêves et que tu
+              n'oublies jamais que tu mérites de voir grand. Je suis fier de toi,
+              de tout ce que tu construis et de la femme que tu deviens.
+            </p>
+            <p>
+              Reste toi-même, ma princesse. Tu n'as pas besoin d'être parfaite pour
+              être aimée. Continue de rire, de rêver, de prendre ta place et de
+              profiter des belles choses qui t'attendent.
+            </p>
+            <p>
+              Joyeux 19 ans, mon gros bébé d'amour. Je te souhaite une année
+              magnifique, à la hauteur de tout ce que tu mérites.
+            </p>
+            <p class="letter-signoff">Je t'aime fort, ma vie.</p>
+          </article>
+        </section>
+
+        <section class="voice-section night-surface" id="voix">
+          <div class="voice-copy" data-reveal>
+            <p class="eyebrow">Et maintenant, ma voix</p>
+            <h2>Parce qu'un<br />message écrit<br />ne suffit <em>pas.</em></h2>
+            <p>Quand tu seras prête, appuie sur lecture. Prends ton temps.</p>
+            <button class="voice-button" id="voiceButton" type="button" aria-label="Écouter le message vocal">
+              <span class="voice-play-icon" aria-hidden="true">▶</span>
+              <span class="voice-button-label">Écouter mon message</span>
+            </button>
+            <div class="audio-progress" id="audioProgressWrap" hidden>
+              <span id="audioElapsed">0:00</span>
+              <input id="audioProgress" type="range" min="0" max="100" value="0" aria-label="Position du message vocal" />
+              <span id="audioDuration">0:00</span>
+            </div>
+            <div class="waveform" id="waveform" aria-hidden="true"></div>
+            <p class="audio-error" id="audioError" role="status"></p>
+          </div>
+          <p class="voice-aside" data-reveal>À écouter<br />une première fois.<br /><em>Et puis une autre.</em></p>
+        </section>
+
+        <section class="finale-section paper-surface" id="final">
+          <div class="finale-star" aria-hidden="true"></div>
+          <p class="eyebrow">Ton jour. Ton année. Ton histoire.</p>
+          <h2>Joyeux 19 ans,<br /><em>Minycan.</em></h2>
+          <figure class="finale-photo" data-reveal>
+            <img data-src="assets/photos/moment-06.jpg" alt="Le sourire de Minycan" loading="lazy" />
+          </figure>
+          <p class="finale-message">Que cette nouvelle année te ressemble :<br />belle, lumineuse et pleine de vie.</p>
+          <p class="finale-signature">Fait avec amour, pour toi.</p>
+          <button class="restart-link" id="restartExperience" type="button">Revoir le début</button>
+        </section>
+      </main>
+    </div>
+
+    <noscript>
+      <p class="noscript-note">Cette surprise a besoin de JavaScript pour s'ouvrir.</p>
+    </noscript>
+  </body>
+</html>
